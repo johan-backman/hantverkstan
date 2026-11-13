@@ -206,12 +206,40 @@ figcaption { margin-top: 0.7rem; }
 
 .contact, .site-footer { background: var(--green-dark); color: var(--on-green); }
 .contact .label { color: var(--on-green); }
-.contact-links { display: grid; font-style: normal; }
+.contact-inner { align-items: start; }
+.contact-links { display: grid; margin-top: var(--space-lg); font-style: normal; }
 .contact-links > a { display: grid; gap: 0.15rem; padding: var(--space-sm) 0; border-top: 1px solid var(--line-on-green); text-decoration: none; overflow-wrap: anywhere; }
 .contact-links > a:last-child { border-bottom: 1px solid var(--line-on-green); }
 .contact-links > a:hover strong { text-decoration: underline; }
 .contact-links strong { font-size: clamp(1rem, 1.9vw, 1.4rem); font-weight: 500; }
 .contact-links a > span { font-size: 0.8rem; }
+.contact-form { display: grid; gap: var(--space-sm); }
+.contact-form label { display: grid; gap: var(--space-xs); }
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  min-height: 2.75rem;
+  padding: var(--space-xs) var(--space-sm);
+  border: 1px solid var(--line-on-green);
+  border-radius: 0;
+  background: var(--on-green);
+  color: var(--ink);
+  font: inherit;
+}
+.contact-form textarea { resize: vertical; }
+.contact-form .button {
+  justify-self: start;
+  margin-top: 0;
+  background: var(--on-green);
+  color: var(--green-dark);
+  font-family: inherit;
+  cursor: pointer;
+}
+.contact-form .button:hover { background: var(--paper-deep); }
+.contact-form :is(input, textarea, button):focus-visible {
+  outline: 2px solid var(--on-green);
+  outline-offset: 3px;
+}
 .site-footer { border-top: 1px solid var(--line-on-green); }
 .footer-inner { padding-block: var(--space-sm); font-size: 0.85rem; }
 

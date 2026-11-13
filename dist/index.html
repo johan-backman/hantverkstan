@@ -142,13 +142,34 @@
         <div>
           <p class="label">Kontakt</p>
           <h2 id="kontakttitel">Ska vi prata<br>om ditt hus?</h2>
-          <p>Berätta gärna vad du vill ha hjälp med, var huset ligger och skicka några bilder om du har. Första mötet och offerten är kostnadsfria.</p>
+          <p>Berätta gärna vad du vill ha hjälp med och var huset ligger. Har du bilder får du gärna mejla dem. Första mötet och offerten är kostnadsfria.</p>
+          <address class="contact-links">
+            <a href="tel:+46702781824"><span>Ring mig</span><strong>070-278 18 24</strong></a>
+            <a href="mailto:hantverkstanpaheden@gmail.com"><span>Mejla mig</span><strong>hantverkstanpaheden@gmail.com</strong></a>
+            <a href="https://www.instagram.com/hantverkstanpaheden/"><span>Instagram</span><strong>@hantverkstanpaheden <span aria-hidden="true">↗</span></strong></a>
+          </address>
         </div>
-        <address class="contact-links">
-          <a href="tel:+46702781824"><span>Ring mig</span><strong>070-278 18 24</strong></a>
-          <a href="mailto:hantverkstanpaheden@gmail.com"><span>Mejla mig</span><strong>hantverkstanpaheden@gmail.com</strong></a>
-          <a href="https://www.instagram.com/hantverkstanpaheden/"><span>Instagram</span><strong>@hantverkstanpaheden <span aria-hidden="true">↗</span></strong></a>
-        </address>
+        <form class="contact-form" action="https://formsubmit.co/hantverkstanpaheden@gmail.com" method="post">
+          <input type="hidden" name="_subject" value="Ny förfrågan från Hantverkstans hemsida">
+          <label>
+            <span>Namn</span>
+            <input type="text" name="Namn" autocomplete="name" maxlength="120" required>
+          </label>
+          <label>
+            <span>Telefon <small>(valfritt)</small></span>
+            <input type="tel" name="Telefon" autocomplete="tel" maxlength="40">
+          </label>
+          <label>
+            <span>E-post</span>
+            <input type="email" name="email" autocomplete="email" maxlength="254" required>
+          </label>
+          <label>
+            <span>Meddelande</span>
+            <textarea name="Meddelande" rows="5" maxlength="5000" required></textarea>
+          </label>
+          <button class="button" type="submit">Skicka meddelande <span aria-hidden="true">↗</span></button>
+          <small>Formuläret skickas via <a href="https://formsubmit.co/privacy.pdf">FormSubmit</a>.</small>
+        </form>
       </div>
     </section>
   </main>

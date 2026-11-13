@@ -26,6 +26,8 @@ Anslut GitHub-repot i Workers & Pages genom att skapa ett Pages-projekt med Git-
 
 Cloudflare publicerar filerna i `dist/` och uppdaterar sajten när du pushar ändringar till `main`. [Cloudflares guide till Git-integration](https://developers.cloudflare.com/pages/get-started/git-integration/)
 
+Kontaktformuläret skickar via FormSubmit. Vid första provinskick från den publicerade sidan behöver mottagaren öppna aktiveringsmejlet från FormSubmit och bekräfta formuläret. Skicka därefter ett nytt provmeddelande och kontrollera att det kommer fram. Om mottagaren ändras behöver även formulärets `action` uppdateras och den nya adressen aktiveras. [FormSubmits hjälp om aktivering](https://formsubmit.co/help)
+
 ## Uppgifter att komplettera
 
 - **[PROJEKTFOTON SAKNAS]** De bifogade verkstadsbilderna illustrerar arbetsmoment. Om ni har bilder från de specifika uppdragen kan ni ersätta arbetsbilderna och uppdatera bildtexterna.
